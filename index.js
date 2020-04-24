@@ -72,7 +72,7 @@ const main = (string) => {
   fetch(`https://api.github.com/orgs/${string}/events`)
     .then(res => res.json())
     .then(data => middle(data))
-    string = '';
+    // string = '';
 }
 
 document.getElementById('org').addEventListener('submit', event => {
