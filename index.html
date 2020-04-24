@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script defer src="index.js"></script>
+  <title>GitHub Events</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Logo</a>
+    </div>
+  </nav>
+  <div class="row">
+    <form id="org" class="col s12 ">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Organzation</label>
+        </div>
+        <button class="btn waves-effect waves-light btn-large" type="submit"
+          name="action">
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <ul class="collection">
+    <li class="collection-item"><a href="https://api.github.com/organizations"
+        target="_blank" rel="noopener noreferrer">organizations</a></li>
+    <li class="collection-item">revelation</li>
+    <li class="collection-item">railslove</li>
+    <li class="collection-item">DROPCitizenShip</li>
+    <li class="collection-item">Elbrus-bootcamp</li>
+  </ul>
+  <div id="content" class="container">
+  </div>
+</body>
+
+</html>
